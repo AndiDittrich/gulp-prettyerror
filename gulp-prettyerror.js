@@ -14,14 +14,20 @@ var PrettyError = (function(customErrorFormat){
     }else{
         // default appearance
         return _gplumber(function(error){
-            // add indentation
-            var msg = error.codeFrame.replace(/\n/g, '\n    ');
-
+            // log the error message
             _gutil.log('|- ' + _gutil.colors.bgRed.bold('Build Error in ' + error.plugin));
             _gutil.log('|- ' + _gutil.colors.bgRed.bold(error.message));
-            _gutil.log('|- ' + _gutil.colors.bgRed('>>>'));
-            _gutil.log('|\n    ' + msg + '\n           |');
-            _gutil.log('|- ' + _gutil.colors.bgRed('<<<'));
+            
+            // make sure there is codeFrame in the error object.
+            // gulp-less does not have it, so it will throw an error
+            if(error.codeFrame != 'undefined') {
+                // add indentation
+                var msg = error.codeFrame.replace(/\n/g, '\n    ');
+                
+                _gutil.log('|- ' + _gutil.colors.bgRed('>>>'));
+                _gutil.log('|\n    ' + msg + '\n           |');
+                _gutil.log('|- ' + _gutil.colors.bgRed('<<<'));
+            }
         });
     }
 });
