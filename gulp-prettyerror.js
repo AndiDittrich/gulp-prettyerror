@@ -33,6 +33,9 @@ var PrettyError = (function(customErrorFormat){
                 _gutil.log('|\n    ' + msg + '\n           |');
                 _gutil.log('|- ' + _gutil.colors.bgRed('<<<'));
             }
+            
+            // make sure the process is finished
+            this.emit('end');
         });
     }
 });
