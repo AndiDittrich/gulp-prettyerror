@@ -9,7 +9,11 @@ var PrettyError = (function(customErrorFormat){
 
         // proxy
         return _gplumber(function(error){
+            // run custom error handler/output formatting
             customErrorFormat.apply(this, [error, _gutil]);
+
+            // make sure the process is finished
+            this.emit('end');
         });
 
     }else{
