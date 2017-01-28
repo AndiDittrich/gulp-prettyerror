@@ -25,5 +25,12 @@
   "dependencies": {
     "gulp-plumber": "^1.1.0",
     "gulp-util": "^3.0.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8"
   }
 }
