@@ -1,3 +1,6 @@
+### 1.2.0 ###
+* Enhancement: Detailed Error Messages are displayed in case `error.cause` or `error.codeFrame` object is provided - suggested by [anweshknayak on GitHub](https://github.com/AndiDittrich/gulp-prettyerror/issues/6)
+
 ### 1.1.1 ###
 * Bugfix: Error handler doesn't emit the `end` event to terminate the current gulp task - thanks to [haqqi on GitHub](https://github.com/AndiDittrich/gulp-prettyerror/pull/4)
 

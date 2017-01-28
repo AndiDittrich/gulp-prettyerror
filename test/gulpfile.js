@@ -15,7 +15,7 @@ _gulp.task('js', function (){
         .pipe(_sourcemaps.init())
 
         // create minified (compressed) version
-        .pipe(_uglify().on('error', _util.log))
+        .pipe(_uglify())
         .pipe(_rename({
             suffix: '.min'
         }))

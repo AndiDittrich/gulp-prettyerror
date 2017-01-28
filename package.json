@@ -1,6 +1,6 @@
 {
   "name": "gulp-prettyerror",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Display Errors in a pretty way, without breaking watch tasks",
   "keywords": [
     "gulp",
@@ -20,7 +20,7 @@
     "gulp-prettyerror.js"
   ],
   "main": "./gulp-prettyerror.js",
-  "author": "Andi Dittrich (http://andidittrich.de)",
+  "author": "Andi Dittrich (https://andidittrich.de)",
   "license": "MIT",
   "dependencies": {
     "gulp-plumber": "^1.1.0",
