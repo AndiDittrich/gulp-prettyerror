@@ -25,3 +25,5 @@ _gulp.task('js', function (){
 
         .pipe(_gulp.dest('.'))
 });
+
+_gulp.task('default', ['js']);

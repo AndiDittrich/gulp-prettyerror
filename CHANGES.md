@@ -1,3 +1,6 @@
+### 1.2.1 ###
+* Bugfix: Suppress errors in case `error.cause` object is not available (set default value to `{}`)- thanks to [Sasmen on GitHub](https://github.com/AndiDittrich/gulp-prettyerror/issues/7)
+
 ### 1.2.0 ###
 * Enhancement: Detailed Error Messages are displayed in case `error.cause` or `error.codeFrame` object is provided - suggested by [anweshknayak on GitHub](https://github.com/AndiDittrich/gulp-prettyerror/issues/6)
 

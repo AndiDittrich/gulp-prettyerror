@@ -24,7 +24,7 @@ var PrettyError = (function(customErrorFormat){
             var plugin = error.plugin || 'unknown';
             var message = error.message || 'unknown error';
             var codeFrame = error.codeFrame || null;
-            var cause = error.cause || null;
+            var cause = error.cause || {};
 
             // detailed message given ? append it
             if (cause.message){
