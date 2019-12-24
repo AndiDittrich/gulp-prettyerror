@@ -8,7 +8,7 @@ var _prettyError = require('../gulp-prettyerror.js');
 
 // default test build
 _gulp.task('js', function (){
-    return _gulp.src(['testfile.js', 'x.js'])
+    return _gulp.src(['testfile.js'])
         .pipe(_prettyError())
 
         // create sourcemaps for development
@@ -26,4 +26,4 @@ _gulp.task('js', function (){
         .pipe(_gulp.dest('.'))
 });
 
-_gulp.task('default', ['js']);
+_gulp.task('default', _gulp.series('js'));

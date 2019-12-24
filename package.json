@@ -1,6 +1,6 @@
 {
   "name": "gulp-prettyerror",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "description": "Display Errors in a pretty way, without breaking watch tasks",
   "keywords": [
     "gulp",
@@ -23,14 +23,14 @@
   "author": "Andi Dittrich (https://andidittrich.de)",
   "license": "MIT",
   "dependencies": {
+    "ansi-colors": "^4.1.1",
     "gulp-plumber": "^1.1.0",
-    "gulp-util": "^3.0.7"
+    "gulplog": "^1.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^2.4.0",
-    "gulp-uglify": "^2.0.1",
-    "gulp-util": "^3.0.8"
+    "gulp-uglify": "^3.0.2"
   }
 }

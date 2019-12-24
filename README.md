@@ -3,7 +3,7 @@ GULP-PrettyError
 Display Errors in a pretty way, without breaking watching tasks
 
 ```bash
-$ npm install gulp-prettyerror --save-dev
+$ yarn add gulp-prettyerror
 ```
 
 ![Screenshot](https://github.com/AndiDittrich/gulp-prettyerror/raw/master/screenshot1.jpg)
@@ -14,7 +14,7 @@ Features
 * **Simple**, **Robust** and **Easy** to use
 * Displays task errors during development without breaking gulp-watch tasks
 * Uses [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) to override the standard error handling
-* Output styling created with [gulp-util](https://github.com/gulpjs/gulp-util) and [chalk](https://github.com/chalk/chalk)
+* Output styling created with [gulplog](https://www.npmjs.com/package/gulplog) and [ansi-colors](https://www.npmjs.com/package/ansi-colors)
 
 Usage
 ------

@@ -1,3 +1,8 @@
+### 2.0.0 ##
+
+* Added: gulp v4 compatibility
+* Changed: removed deprecated `gulp-util`
+
 ### 1.2.1 ###
 * Bugfix: Suppress errors in case `error.cause` object is not available (set default value to `{}`)- thanks to [Sasmen on GitHub](https://github.com/AndiDittrich/gulp-prettyerror/issues/7)
 
